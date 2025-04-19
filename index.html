@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Payment</h1>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <span id="cardNumberError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date (MM/YY):</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                <span id="expiryDateError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                <span id="cvvError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="cardholderName">Cardholder Name:</label>
+                <input type="text" id="cardholderName" name="cardholderName" required>
+                <span id="cardholderNameError" class="error-message"></span>
+            </div>
+            <button type="submit">Submit Payment</button>
+            <div id="message" class="message"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
